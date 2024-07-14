@@ -1,30 +1,23 @@
-# React + TypeScript + Vite
+# Front-End V2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Create a Tic-tac-toe application with the following requirements. The
+application consists of ONE screen where all interactions take place.
 
-Currently, two official plugins are available:
+## Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Functional Requirements:
 
-## Expanding the ESLint configuration
+- The game takes place on a 3-by-3 grid.
+- The game has two human players.
+- The game ends when either player has three marks in a row, or there is a draw.
+- Display the winner (X or O) or an announcement of a draw when the game ends.
+- The user can restart the game.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Non-Functional Requirements:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Use React with either Vite or Next.js.
+- Use a CSS library of choice.
+- Use **TypeScript** for type safety.
+  - Define types where applicable.
+- Do not use `any` type.
+- Ensure the UI is clean and **responsive**.
